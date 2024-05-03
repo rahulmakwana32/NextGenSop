@@ -1,0 +1,25 @@
+SOP ID,SOP Title,SOP Description,SOP Steps
+1,Code Debugging Resolution,SOP to resolve common code debugging errors,"1. Review error message and stack trace using `cat`, `tail`, or `less` commands.
+2. Identify code snippet causing the error using `grep` or `find`.
+3. Check data types and variable values using `print` or `debug` statements.
+4. Fix code based on error cause using a text editor like `vim`, `nano`, or `sublime`."
+2,Thread Dump Analysis Procedure,SOP for analyzing thread dumps,"1. Collect thread dump data using `jstack`, `kill -3`, or `jcmd` command.
+2. Analyze thread states and stack traces using `grep`, `awk`, or `sed`.
+3. Identify threads causing performance issues using `ps` or `top` command.
+4. Implement solutions based on thread analysis using `kill` or `renice` commands."
+3,Out-Of-Memory (OOM) Handling,SOP to handle Java heap space errors (OOM),"1. Monitor application memory usage using `top`, `htop`, or `jstat` command.
+2. Analyze OOM error messages and heap dumps using `tail`, `head`, or `grep`.
+3. Optimize memory usage and configurations using `java` or `jvm` options.
+4. Implement garbage collection tuning or memory upgrades using `jconsole` or `jmap` commands."
+4,Network Latency Troubleshooting,SOP for troubleshooting high network latency issues,"1. Measure network latency using `ping`, `traceroute`, or `mtr` command.
+2. Identify network bottlenecks and congestion points using `netstat` or `ifconfig`.
+3. Optimize network configurations and traffic routing using `route`, `iptables`, or `sysctl` commands.
+4. Verify latency improvements using `ping` or `traceroute`."
+5,Kafka Lag Issue Resolution,SOP to resolve Kafka consumer lag issues,"1. Monitor Kafka consumer lag metrics using `kafka-consumer-groups` command.
+2. Identify lagging consumer groups and partitions using `grep` or `awk`.
+3. Adjust consumer group configurations or increase consumer capacity using `kafka-configs` or `kafka-topics` command.
+4. Validate lag reduction using Kafka metrics or monitoring tools."
+6,Kafka Rebalancing Procedure,SOP for handling Kafka consumer group rebalancing,"1. Monitor Kafka consumer group states and partitions using `kafka-consumer-groups` or `kafka-topics` command.
+2. Identify rebalancing triggers such as new consumers or failures using monitoring tools or logs.
+3. Allow Kafka to rebalance partitions automatically.
+4. Verify rebalancing completion using Kafka metrics or monitoring tools."
