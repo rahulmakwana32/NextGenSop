@@ -27,6 +27,8 @@ def get_qa_chain():
     vectordb = FAISS.load_local(vectordb_file_path, instructor_embeddings, allow_dangerous_deserialization=True)
     retriever = vectordb.as_retriever(score_threshold=1.0)
 
+#Customizable prompt template: modify to suit your needs. Specify the CSV column explicitly.
+
     prompt_template = """Given the following context and a question, generate an answer based on this context only.
     In the answer try to provide as much text as possible from "SOP Title","SOP Description" and "SOP Steps"  section in the source document context without making much changes.
     If the answer is not found in the context, kindly state "I don't know." Don't try to make up an answer just give slight hint in few sentences but at end mention to reach out to Seniors to get more details on your queries.
