@@ -1,43 +1,49 @@
-****NextGen SOP Management****
+# NextGen SOP Management
 
-****Overview****
+## Overview
 
-This is a chat search application that allows users to search for Standard Operating Procedures (SOPs) based on natural language queries. The application uses LangChain and Google Generative AI to retrieve relevant SOPs from a database.
+This  application  allows users to search for Standard Operating Procedures (SOPs) based on natural language queries. The application uses LangChain and Google Generative AI to retrieve relevant SOPs from a database.
 
-****Requirements****
- 
-1.Python 3.8 or later
-2.LangChain
-3.LangChain Community
-4.Hugging Face Transformers
-5.FAISS (CPU or GPU)
-6.Google Generative AI (requires API key)
-7.Dotenv
+## Requirements
 
-****Installation****
+- Python 3.8 or later
+- LangChain
+- LangChain Community
+- Hugging Face Transformers
+- FAISS (CPU or GPU)
+- Google Generative AI (requires API key)
+- Dotenv
 
-Install the required libraries using pip: pip install -r requirements.txt
-Create a .env file with your Google API key: GOOGLE_API_KEY=<>
-Run the application using python (link unavailable)
+## Installation
 
-****Usage****
+1. Install the required libraries using pip: `pip install -r requirements.txt`
+2. Create a `.env` file with your Google API key: `GOOGLE_API_KEY=<your_api_key>`
+3. Run the application using python.
 
-The application will prompt the user to search for SOPs.
-Enter a natural language query, and the application will retrieve relevant SOPs.
-The results will be displayed in a list, with each result including the SOP title, description, and steps.
+## Usage
 
-****Code Overview****
-create_vector_db() creates a vector database from the SOP data in SOP.csv(This is KB which you can maintain ).
-get_qa_chain() creates a QA chain using the vector database and Google Generative AI.
-chat_search() runs the chat search application using the QA chain.
-The application uses LangChain and Hugging Face Instruct Embeddings for text embedding and retrieval.
-FAISS is used for efficient vector storage and retrieval.
-Google Generative AI is used for generating answers based on the retrieved SOPs.
+1. The application will prompt the user to search for SOPs.
+2. Enter a natural language query, and the application will retrieve relevant SOPs.
+3. The results will be displayed in a list, with each result including the SOP title, description, and steps.
 
-****Note****
+## Code Overview
 
-This application requires a Google API key for the Google Generative AI library.
-The langchain_google_genai library is not publicly available, and you may need to install it from a private repository or build it from source.
-The application uses a simple prompt template for generating answers, and you may need to modify it to suit your specific use case.
+- `create_vector_db()`: Creates a vector database from the SOP data in `SOP.csv`.
+- `get_qa_chain()`: Creates a QA chain using the vector database and Google Generative AI.
+- `chat_search()`: Runs the chat search application using the QA chain.
+
+The application uses LangChain and Hugging Face Instruct Embeddings for text embedding and retrieval. FAISS is used for efficient vector storage and retrieval. Google Generative AI is used for generating answers based on the retrieved SOPs.
+
+## Note
+
+- This application requires a Google API key for the Google Generative AI library.
+- The `langchain_google_genai` library may not be publicly available and may need to be installed from a private repository or built from source.
+- The application uses a simple prompt template for generating answers, and you may need to modify it to suit your specific use case.
+
+## References
+- https://instructor-embedding.github.io/
+- https://www.youtube.com/watch?v=AjQPRomyd-k&t=1175s
+  
+## WorkFlow
 
   ![output-onlinegiftools (1)](https://github.com/rahulmakwana32/NextGenSop/assets/42233989/40be0983-e9b0-4eb9-8528-ba6dd5a5429f)
