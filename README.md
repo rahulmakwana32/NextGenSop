@@ -5,7 +5,7 @@
 This is a chat search application that allows users to search for Standard Operating Procedures (SOPs) based on natural language queries. The application uses LangChain and Google Generative AI to retrieve relevant SOPs from a database.
 
 ****Requirements****
-
+ 
 1.Python 3.8 or later
 2.LangChain
 3.LangChain Community
