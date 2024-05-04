@@ -43,7 +43,7 @@ def get_qa_chain():
 def chat_search():
     chain = get_qa_chain()
     while True:
-        user_input = input("Looking for Sop?: ")
+        user_input = input("Get SOP information on : ")
         response = chain(user_input)
         result = response['result']
         print("\n".join(f"* {r}" for r in result.split("\n")))
