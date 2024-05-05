@@ -1,5 +1,4 @@
-import warnings
-warnings.filterwarnings("ignore", category=DeprecationWarning)
+
 
 from langchain.document_loaders.csv_loader import CSVLoader
 from langchain_community.vectorstores import FAISS
